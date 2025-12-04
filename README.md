@@ -22,20 +22,29 @@ This project combines **Exploratory Data Analysis (EDA)**, **Machine Learning**,
 
 ---
 
+## 🌐 Live Application
+
+**Your app is deployed and live on the internet!**
+
+🚀 **Live URL:** https://dev-kavindu-ml-project1.streamlit.app
+
+**Status:** ✅ Active & Running
+
+---
+
 ## 📚 Documentation
 
 **All comprehensive documentation is organized in the `Documentation/` folder:**
 
-| Document | Purpose | Size |
-|----------|---------|------|
-| **README.md** | Complete guide & overview | 14 KB |
-| **PROJECT_DOCUMENTATION.md** | Technical deep dive & API reference | 22 KB |
-| **QUICK_REFERENCE.md** | Fast lookup & common commands | 8 KB |
-| **PROJECT_REVIEW_SUMMARY.md** | Analysis & completion report | 13 KB |
-| **DOCUMENTATION_INDEX.md** | Navigation & cross-references | 13 KB |
-| **COMPLETION_CERTIFICATE.md** | Completion verification | 14 KB |
-| **FINAL_SUMMARY.md** | Executive summary | 14 KB |
-| **START_HERE.md** | Master documentation overview | 14 KB |
+| Document | Purpose |
+|----------|---------|
+| **README.md** | Complete guide & overview |
+| **PROJECT_DOCUMENTATION.md** | Technical deep dive & API reference |
+| **QUICK_REFERENCE.md** | Fast lookup & common commands |
+| **PROJECT_REVIEW_SUMMARY.md** | Analysis & completion report |
+| **FINAL_SUMMARY.md** | Executive summary |
+| **START_HERE.md** | Master documentation overview |
+| **STREAMLIT_CLOUD_DEPLOYMENT.md** | How to update your deployed app |
 
 **📖 Start with:** [`Documentation/README.md`](Documentation/README.md)
 
@@ -68,29 +77,13 @@ streamlit run main.py
 
 ---
 
-## 🚀 Deployment
+## 🚀 Deployment Status
 
-**Ready to go live?** Multiple deployment options available:
+**Your app is live!** Visit it now:
 
-| Platform | Cost | Time | Best For |
-|----------|------|------|----------|
-| **Streamlit Cloud** | FREE | 5 min | 🎯 **Recommended** |
-| **Heroku** | $7/mo | 15 min | Production |
-| **Docker + AWS/Azure** | Varies | 30 min | Enterprise |
-| **Render** | FREE/Paid | 10 min | Modern Apps |
+👉 **https://dev-kavindu-ml-project1.streamlit.app**
 
-**📖 Full deployment guide:** [`Documentation/DEPLOYMENT_GUIDE.md`](Documentation/DEPLOYMENT_GUIDE.md)
-
-### Quick Deploy to Streamlit Cloud (30 seconds)
-```powershell
-# 1. Push to GitHub
-git add .
-git commit -m "Ready for deployment"
-git push
-
-# 2. Visit: https://streamlit.io/cloud
-# 3. Click "New app" → Select your repo → Deploy!
-```
+**Full deployment guide:** [`Documentation/STREAMLIT_CLOUD_DEPLOYMENT.md`](Documentation/STREAMLIT_CLOUD_DEPLOYMENT.md)
 
 ---
 

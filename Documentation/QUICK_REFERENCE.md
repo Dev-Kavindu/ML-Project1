@@ -4,6 +4,14 @@
 
 ---
 
+## 🌐 Live Application
+
+**Your app is deployed!**
+
+👉 **URL:** https://dev-kavindu-ml-project1.streamlit.app
+
+---
+
 ## ⚡ Quick Commands
 
 ### Start Application

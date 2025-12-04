@@ -8,7 +8,15 @@
 
 ---
 
-## 🎯 Overview
+## 🌐 Live Application
+
+**Your app is now deployed and live!**
+
+🚀 **Access it here:** https://dev-kavindu-ml-project1.streamlit.app
+
+**Status:** ✅ Running Live
+
+---
 
 This project combines **Exploratory Data Analysis (EDA)**, **Machine Learning**, and **Web Application Development** to create a production-ready sales prediction system. The application analyzes the relationship between advertising spending (TV, Radio, Newspaper) and sales revenue, then uses a trained Random Forest model to make real-time predictions with support for multiple currencies.
 
