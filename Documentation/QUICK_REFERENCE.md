@@ -8,7 +8,7 @@
 
 **Your app is deployed!**
 
-👉 **URL:** https://dev-kavindu-ml-project1.streamlit.app
+👉 **URL:** https://ml-project1-5gwnorma9jbmdvkblm97ct.streamlit.app
 
 ---
 

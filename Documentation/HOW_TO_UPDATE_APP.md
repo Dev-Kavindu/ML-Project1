@@ -1,6 +1,6 @@
 # 🔄 How to Update Your Deployed App
 
-**Your app is live at:** https://dev-kavindu-ml-project1.streamlit.app
+**Your app is live at:** https://ml-project1-5gwnorma9jbmdvkblm97ct.streamlit.app
 
 This guide explains how to update your deployed application.
 
@@ -177,7 +177,7 @@ git push origin main
 ### Check if App Updated
 1. **Visit your app URL:**
    ```
-   https://dev-kavindu-ml-project1.streamlit.app
+   https://ml-project1-5gwnorma9jbmdvkblm97ct.streamlit.app
    ```
 2. **Refresh the browser** (F5 or Ctrl+Shift+R)
 3. **Look for your changes**

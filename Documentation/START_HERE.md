@@ -3,7 +3,7 @@
 
 **Status:** ✅ **DEPLOYED & LIVE**  
 **Date:** December 5, 2025  
-**Live URL:** https://dev-kavindu-ml-project1.streamlit.app  
+**Live URL:** https://ml-project1-5gwnorma9jbmdvkblm97ct.streamlit.app  
 **Repository:** Dev-Kavindu/ML-Project1  
 
 ---

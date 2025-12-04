@@ -57,7 +57,7 @@ Once deployment completes, you'll see:
 
 ```
 ✓ Deployment successful
-✓ Your app URL: https://dev-kavindu-ml-project1.streamlit.app
+✓ Your app URL: https://ml-project1-5gwnorma9jbmdvkblm97ct.streamlit.app
 ```
 
 **Share this URL with anyone to let them use your app!**
@@ -78,9 +78,9 @@ Once deployment completes, you'll see:
 
 ### URL Format
 ```
-https://[github-username]-[repo-name].streamlit.app
+https://[custom-deployment-url].streamlit.app
 
-Example: https://dev-kavindu-ml-project1.streamlit.app
+Your URL: https://ml-project1-5gwnorma9jbmdvkblm97ct.streamlit.app
 ```
 
 ---
@@ -305,7 +305,7 @@ Your app is now live on the internet!
 | **Main File** | main.py |
 | **Cost** | FREE |
 | **Status** | ✅ Deployed |
-| **Live URL** | https://dev-kavindu-ml-project1.streamlit.app |
+| **Live URL** | https://ml-project1-5gwnorma9jbmdvkblm97ct.streamlit.app |
 
 ---
 

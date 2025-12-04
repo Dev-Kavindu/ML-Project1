@@ -12,7 +12,7 @@
 
 **Your app is now deployed and live!**
 
-🚀 **Access it here:** https://dev-kavindu-ml-project1.streamlit.app
+🚀 **Access it here:** https://ml-project1-5gwnorma9jbmdvkblm97ct.streamlit.app
 
 **Status:** ✅ Running Live
 

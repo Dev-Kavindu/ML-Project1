@@ -26,7 +26,7 @@ This project combines **Exploratory Data Analysis (EDA)**, **Machine Learning**,
 
 **Your app is deployed and live on the internet!**
 
-🚀 **Live URL:** https://dev-kavindu-ml-project1.streamlit.app
+🚀 **Live URL:** https://ml-project1-5gwnorma9jbmdvkblm97ct.streamlit.app
 
 **Status:** ✅ Active & Running
 
