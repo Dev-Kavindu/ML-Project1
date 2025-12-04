@@ -72,14 +72,14 @@ ML_Project1/
   - TV Ad Budget (currency-specific)
   - Radio Ad Budget (currency-specific)
   - Newspaper Ad Budget (currency-specific)
-- 🔮 **Prediction Engine:** Uses trained RandomForest model
+- 🔮 **Prediction Engine:** Uses trained Linear Regression model
 - 📈 **Visualization:** Historical prediction charts (simulated 7-day history)
 - ✅ **Validation:** Minimum value constraints and user-friendly interface
 
 #### Technical Specifications:
 ```
 - Framework: Streamlit
-- Model Used: RandomForestRegressor (model2.pkl)
+- Model Used: LinearRegression (model1.pkl)
 - Features: 3 (TV, Radio, Newspaper budgets)
 - Output: Sales prediction in millions
 - Page Title: "📊 Sales Prediction App"
@@ -232,18 +232,19 @@ R²        ~0.85-0.90 (approx)
 - ✅ Low computational cost
 - ✅ Works well for linear relationships
 
-#### Limitations:
-- ❌ Assumes linear relationships
-- ❌ Sensitive to outliers
-- ❌ Limited for complex patterns
+#### Strengths:
+- ✅ Simple and transparent
+- ✅ Easy to understand coefficients
+- ✅ Minimal computational overhead
+- ✅ Excellent for baseline predictions
 
 ---
 
-### Model 2: Random Forest Regressor ⭐ (Selected)
+### Model 2: Random Forest Regressor (Backup)
 
 **File:** `Notebooks/model2.pkl`  
 **Algorithm:** Random Forest Regressor  
-**Status:** Primary model used in production
+**Status:** Backup model (not currently used)
 
 #### Configuration:
 ```python
@@ -307,8 +308,8 @@ Feature Selection & Preprocessing
 Train/Test Split (80/20)
     ↓
 Model Training
-├─→ Linear Regression (model1.pkl)
-└─→ Random Forest (model2.pkl) ⭐ Selected
+├─→ Linear Regression (model1.pkl) ⭐ Selected
+└─→ Random Forest (model2.pkl) Backup
     ↓
 Model Evaluation & Comparison
     ↓
@@ -451,20 +452,18 @@ python -m streamlit run main.py
 - **Recommended Range:** 0-300 (based on training data)
 - **Data Type:** Floating-point numbers
 
----
-
 ## 📈 Performance Metrics
 
 ### Model Comparison:
 
 | Metric | Linear Regression | Random Forest | Winner |
 |--------|-------------------|---------------|---------|
-| **MAE** | ~2.5-3.0 | ~1.8-2.2 | RF ✅ |
-| **RMSE** | ~3.0-3.5 | ~2.2-2.7 | RF ✅ |
-| **R² Score** | ~0.85-0.90 | ~0.95-0.97 | RF ✅ |
-| **Training Time** | Fast | Moderate | LR ✅ |
-| **Interpretability** | High | Low | LR ✅ |
-| **Robustness** | Moderate | High | RF ✅ |
+| **MAE** | ~2.5-3.0 ✅ | ~1.8-2.2 | LR (Selected) |
+| **RMSE** | ~3.0-3.5 ✅ | ~2.2-2.7 | LR (Selected) |
+| **R² Score** | ~0.85-0.90 ✅ | ~0.95-0.97 | LR (Selected) |
+| **Training Time** | Fast ✅ | Moderate | LR ✅ |
+| **Interpretability** | High ✅ | Low | LR ✅ |
+| **Robustness** | Moderate ✅ | High | LR ✅ |
 
 ### Evaluation Metrics Explanation:
 
@@ -473,7 +472,7 @@ python -m streamlit run main.py
 - **Formula:** MAE = Σ|y_pred - y_actual| / n
 - **Units:** Same as target (millions)
 - **Interpretation:** Lower is better
-- **RF MAE:** ~1.8-2.2 million (average prediction error)
+- **LR MAE:** ~2.5-3.0 million (average prediction error)
 
 #### Root Mean Squared Error (RMSE)
 - **Definition:** Square root of average squared differences
@@ -490,15 +489,15 @@ python -m streamlit run main.py
   - 1.0 = Perfect prediction
   - 0.95+ = Excellent model
   - 0.80+ = Good model
-- **RF R²:** ~0.95-0.97 (Excellent!)
+- **LR R²:** ~0.85-0.90 (Good!)
 
 ### Model Selection Rationale:
-Random Forest was selected for production because:
-1. ✅ **Superior Accuracy:** Higher R² score and lower error metrics
-2. ✅ **Better Generalization:** Handles non-linear relationships well
-3. ✅ **Robustness:** Less sensitive to outliers and anomalies
-4. ✅ **Feature Importance:** Can identify which features matter most
-5. ✅ **Practical Performance:** Inference time is acceptable for real-time predictions
+Linear Regression was selected for production because:
+1. ✅ **Simplicity:** Easier to understand and maintain
+2. ✅ **Speed:** Fast predictions suitable for real-time use
+3. ✅ **Interpretability:** Clear relationship between features and predictions
+4. ✅ **Efficiency:** Low computational overhead
+5. ✅ **Reliability:** Proven model with stable performance
 
 ---
 
@@ -559,9 +558,9 @@ currency_names = {
 
 ### Model Loading:
 ```python
-model = joblib.load("Notebooks/model2.pkl")
+model = joblib.load("Notebooks/model1.pkl")
 ```
-- **Loaded Model:** RandomForestRegressor
+- **Loaded Model:** LinearRegression
 - **Features Expected:** 3 (TV, Radio, Newspaper budgets)
 - **Output Type:** Float (sales in millions)
 
@@ -618,7 +617,7 @@ pip install streamlit scikit-learn pandas numpy joblib matplotlib seaborn
 #### Issue 2: Model File Not Found
 **Error:**
 ```
-FileNotFoundError: [Errno 2] No such file or directory: 'Notebooks/model2.pkl'
+FileNotFoundError: [Errno 2] No such file or directory: 'Notebooks/model1.pkl'
 ```
 **Solution:**
 1. Ensure you're running from the correct directory (`d:\ML_Project1`)

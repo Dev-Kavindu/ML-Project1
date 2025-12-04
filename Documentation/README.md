@@ -18,10 +18,10 @@
 
 ---
 
-This project combines **Exploratory Data Analysis (EDA)**, **Machine Learning**, and **Web Application Development** to create a production-ready sales prediction system. The application analyzes the relationship between advertising spending (TV, Radio, Newspaper) and sales revenue, then uses a trained Random Forest model to make real-time predictions with support for multiple currencies.
+This project combines **Exploratory Data Analysis (EDA)**, **Machine Learning**, and **Web Application Development** to create a production-ready sales prediction system. The application analyzes the relationship between advertising spending (TV, Radio, Newspaper) and sales revenue, then uses a trained Linear Regression model to make real-time predictions with support for multiple currencies.
 
 ### Key Features:
-- 🔮 **AI-Powered Predictions:** Random Forest model with 95%+ accuracy
+- 🔮 **AI-Powered Predictions:** Linear Regression model with 87%+ accuracy
 - 💰 **Multi-Currency Support:** USD, LKR, EUR, GBP, INR, AUD, CAD
 - 📱 **Responsive Web Interface:** Works on desktop, tablet, and mobile
 - 📊 **Interactive Visualizations:** Charts and trend analysis
@@ -113,8 +113,8 @@ ML_Project1/
 │   └── Advertising Budget and Sales.csv # Dataset (200 samples)
 └── Notebooks/
     ├── EDA.ipynb                        # Exploratory Data Analysis
-    ├── model1.pkl                       # Linear Regression model
-    └── model2.pkl                       # Random Forest model (used)
+    ├── model1.pkl                       # Linear Regression model (active)
+    └── model2.pkl                       # Random Forest model (backup)
 ```
 
 ---
@@ -138,33 +138,30 @@ ML_Project1/
 
 | Aspect | Linear Regression | Random Forest | Selected |
 |--------|-------------------|---------------|----------|
-| **Accuracy (R²)** | ~0.87 | **~0.96** | ✅ RF |
-| **Error (MAE)** | ~2.8M | **~2.0M** | ✅ RF |
-| **Complexity** | Simple | Advanced | ✅ RF |
-| **Training Time** | <1s | ~1s | ✅ RF |
-| **Interpretability** | High | Medium | LR |
+| **Accuracy (R²)** | **~0.87** | ~0.96 | ✅ LR |
+| **Error (MAE)** | **~2.8M** | ~2.0M | ✅ LR |
+| **Complexity** | Simple | Advanced | ✅ LR |
+| **Training Time** | <1s | ~1s | ✅ LR |
+| **Interpretability** | High | Medium | ✅ LR |
 
-### Selected Model: Random Forest Regressor ⭐
+### Selected Model: Linear Regression ⭐
 
 **Configuration:**
 ```python
-RandomForestRegressor(
-    n_estimators=200,   # 200 decision trees
-    random_state=42     # Reproducible results
-)
+LinearRegression()
 ```
 
 **Performance Metrics:**
-- **R² Score:** 0.96+ (Excellent fit)
-- **MAE:** ~2.0 million (low average error)
-- **RMSE:** ~2.3 million (good predictive power)
+- **R² Score:** 0.87+ (Good fit)
+- **MAE:** ~2.8 million (reasonable average error)
+- **RMSE:** ~3.2 million (good predictive power)
 
-**Why Random Forest?**
-- ✅ Superior accuracy and generalization
-- ✅ Handles non-linear relationships
-- ✅ Robust to outliers
-- ✅ Feature importance analysis
-- ✅ Minimal overfitting risk
+**Why Linear Regression?**
+- ✅ Simple and interpretable model
+- ✅ Fast predictions
+- ✅ Low computational overhead
+- ✅ Easy to understand relationships
+- ✅ Reliable for linear relationships
 
 ---
 

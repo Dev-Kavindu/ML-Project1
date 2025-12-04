@@ -10,10 +10,10 @@
 
 ## 🎯 Overview
 
-This project combines **Exploratory Data Analysis (EDA)**, **Machine Learning**, and **Web Application Development** to create a production-ready sales prediction system. The application analyzes the relationship between advertising spending (TV, Radio, Newspaper) and sales revenue, then uses a trained Random Forest model to make real-time predictions with support for multiple currencies.
+This project combines **Exploratory Data Analysis (EDA)**, **Machine Learning**, and **Web Application Development** to create a production-ready sales prediction system. The application analyzes the relationship between advertising spending (TV, Radio, Newspaper) and sales revenue, then uses a trained Linear Regression model to make real-time predictions with support for multiple currencies.
 
 ### Key Features:
-- 🔮 **AI-Powered Predictions:** Random Forest model with 95%+ accuracy
+- 🔮 **AI-Powered Predictions:** Linear Regression model with 87%+ accuracy
 - 💰 **Multi-Currency Support:** USD, LKR, EUR, GBP, INR, AUD, CAD
 - 📱 **Responsive Web Interface:** Works on desktop, tablet, and mobile
 - 📊 **Interactive Visualizations:** Charts and trend analysis
@@ -115,8 +115,8 @@ ML_Project1/
 │   └── Advertising Budget and Sales.csv  # Dataset (200 samples)
 └── Notebooks/
     ├── EDA.ipynb                    # Data analysis notebook
-    ├── model1.pkl                   # Linear Regression model
-    └── model2.pkl                   # Random Forest model (active)
+    ├── model1.pkl                   # Linear Regression model (active)
+    └── model2.pkl                   # Random Forest model (backup)
 ```
 
 ---
@@ -124,8 +124,8 @@ ML_Project1/
 ## 🎯 Project Highlights
 
 ### Machine Learning Model
-- **Algorithm:** Random Forest Regressor (200 trees)
-- **Accuracy:** 96%+ (R² Score)
+- **Algorithm:** Linear Regression
+- **Accuracy:** 87%+ (R² Score)
 - **Training Data:** 200 samples, 4 features
 - **Features:** TV, Radio, Newspaper advertising budgets
 - **Output:** Sales prediction in millions
@@ -152,8 +152,8 @@ ML_Project1/
 
 | Metric | Value |
 |--------|-------|
-| **Accuracy (R²)** | 0.96+ |
-| **Error (MAE)** | ~2.0 million |
+| **Accuracy (R²)** | 0.87+ |
+| **Error (MAE)** | ~2.8 million |
 | **Prediction Speed** | 50-100ms |
 | **Memory Usage** | ~250MB |
 

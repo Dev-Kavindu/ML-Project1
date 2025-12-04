@@ -111,7 +111,7 @@ git push origin main
 
 ### 4. Change the Model
 ```powershell
-# Replace model2.pkl with new trained model
+# Replace model1.pkl with new trained model
 # Push to GitHub:
 git add .
 git commit -m "Deployed improved ML model"

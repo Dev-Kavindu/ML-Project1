@@ -49,8 +49,8 @@ deactivate
 | `main.py` | Streamlit web app | 188 lines |
 | `EDA.ipynb` | Data analysis notebook | 12 cells |
 | `DATA/csv` | Dataset | 200 records |
-| `model1.pkl` | Linear Regression | Backup |
-| `model2.pkl` | Random Forest ⭐ | Active |
+| `model1.pkl` | Linear Regression ⭐ | Active |
+| `model2.pkl` | Random Forest | Backup |
 | `README.md` | User guide | 400+ lines |
 | `PROJECT_DOCUMENTATION.md` | Full docs | 600+ lines |
 | `pyproject.toml` | Config | 8 lines |
@@ -75,7 +75,7 @@ X_train, X_test, y_train, y_test = get_train_test_data(
 
 #### Model Prediction
 ```python
-model = joblib.load("Notebooks/model2.pkl")
+model = joblib.load("Notebooks/model1.pkl")
 prediction = model.predict([[tv, radio, newspaper]])[0]
 ```
 **Input:** 3 budget values  
@@ -101,11 +101,11 @@ prediction = model.predict([[tv, radio, newspaper]])[0]
 
 | Metric | Linear Reg | Random Forest |
 |--------|-----------|---------------|
-| R² | 0.87 | **0.96** ⭐ |
-| MAE | 2.8M | **2.0M** |
-| RMSE | 3.2M | **2.3M** |
-| Speed | Fast | Fast |
-| Used | No | **Yes** ✅ |
+| R² | **0.87** ⭐ | 0.96 |
+| MAE | **2.8M** | 2.0M |
+| RMSE | **3.2M** | 2.3M |
+| Speed | **Fast** ⭐ | Fast |
+| Used | **Yes** ✅ | No |
 
 ---
 

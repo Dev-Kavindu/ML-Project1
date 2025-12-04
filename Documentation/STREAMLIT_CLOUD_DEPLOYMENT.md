@@ -15,7 +15,7 @@ Before starting, verify:
 - ✅ Files present:
   - `main.py` ✓
   - `requirements.txt` ✓
-  - `Notebooks/model2.pkl` ✓
+  - `Notebooks/model1.pkl` ✓
   - `Data/Advertising Budget and Sales.csv` ✓
 
 **Status: All verified! Ready to deploy.**
@@ -141,11 +141,11 @@ Your dashboard shows:
 2. Push changes: `git push origin main`
 3. Streamlit will auto-redeploy
 
-### Issue: "Model not found"
+### Issue: Model Not Found
 **Solution:**
-1. Verify file path in `main.py` is relative:
+1. Verify file path in `main.py` is correct:
    ```python
-   model = joblib.load("Notebooks/model2.pkl")  # ✓ Correct
+   model = joblib.load("Notebooks/model1.pkl")  # ✓ Correct
    ```
 2. Ensure model file exists in your GitHub repo
 3. Check logs for detailed error
